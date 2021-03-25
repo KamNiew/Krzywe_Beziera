@@ -17,8 +17,8 @@ class Kordynaty:
 def krzywa_beziera(p):
     warx = []
     wary = []
-    for i in range(0, 21, 1):
-        t = i / 20
+    for i in range(0, 201, 1):
+        t = i / 200
 
         x = (p.x1 * (1 - t) ** 3 + p.px1 * 3 * t * (1 - t) ** 2 + p.px2 * 3 * t ** 2 * (1 - t) + p.x2 * t ** 3)
         y = (p.y1 * (1 - t) ** 3 + p.py1 * 3 * t * (1 - t) ** 2 + p.py2 * 3 * t ** 2 * (1 - t) + p.y2 * t ** 3)
